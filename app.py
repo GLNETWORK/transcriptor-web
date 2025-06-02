@@ -12,6 +12,11 @@ os.makedirs(TRANSCRIPT_FOLDER, exist_ok=True)
 
 model = whisper.load_model("base")
 
+# Crear carpeta uploads si no existe
+if not os.path.exists('uploads'):
+    os.makedirs('uploads')
+
+
 def dividir_por_minutos(transcription):
     resultado = ""
     current_minute = -1
