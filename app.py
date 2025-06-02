@@ -10,7 +10,7 @@ TRANSCRIPT_FOLDER = 'transcripts'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(TRANSCRIPT_FOLDER, exist_ok=True)
 
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 # Crear carpeta uploads si no existe
 if not os.path.exists('uploads'):
